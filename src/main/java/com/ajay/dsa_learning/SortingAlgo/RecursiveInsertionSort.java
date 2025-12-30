@@ -17,7 +17,7 @@ public class RecursiveInsertionSort {
         recursiveInsertionSort(arr, n + 1);
     }
 
-    private int[] insertionSort(int[] arr, int n) {
+    private void insertionSort(int[] arr, int n) {
         int i = n - 1;
         int curr = arr[n];
 
@@ -27,6 +27,5 @@ public class RecursiveInsertionSort {
         }
         arr[i + 1] = curr;
 
-        return arr;
     }
 }
